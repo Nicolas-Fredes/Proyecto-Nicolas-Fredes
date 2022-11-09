@@ -1,0 +1,288 @@
+@media screen and (min-width: 768px) {
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+html {
+    font-size: auto;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif , sans-serif;
+
+}
+
+body{
+    background: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif , sans-serif;
+}
+/*linea del principio*/
+
+hr {
+    color: black;
+  }
+/*Esto es parte del logo*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+   }
+
+.logo {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+/*Menu de navegacion*/
+
+.nave{
+   max-width: 20rem;
+    margin:  auto;
+    background:#6a6a6a ;
+    z-index: 0;
+
+
+}
+
+.navegacion ul{
+    
+    list-style: none;
+    
+
+}
+
+.menu > li{
+    
+    display: inline-block;
+
+}
+
+.menu > li > a{
+    display: block;
+    padding: 10px 10px;
+    color:#272635;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-decoration: none;
+
+} 
+
+.menu li a:hover {
+    color:white ;
+    transition: all .3s;
+}
+
+/*Submenu*/
+
+.submenu {
+    position: absolute;
+    background:#6a6a6a;
+    display: none;
+    z-index: 1;
+}
+
+.submenu li a {
+    display:block;
+    padding: 15px;
+    color:#272635;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.container{
+    width: auto ;
+    margin: auto ;
+     
+
+}
+header{
+    background: white;
+    height: auto;
+    width: auto;
+    text-align: center;
+    line-height: auto;
+    color: #383B53;
+    
+    
+}
+
+/*Primer Subtitulo de las fotos*/
+img .fondo1{
+    max-width: 100%;
+    width: 1500px;
+    
+}
+.sub1 h2{ 
+
+    text-align: center;
+    color: #383B53 ;
+    font-size:xx-large;
+
+}    
+
+.sub1 img{
+        
+    width: 50rem;
+    height: auto;   
+    display:block;
+    margin:auto;
+
+}   
+
+.article{
+    text-align:left;
+
+}
+
+
+.container{
+    width: 100%;
+    display:flex;
+    max-width: 80rem;
+    text-align: center;
+   
+     }
+
+
+
+
+
+/*aca esta el texto*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 700px 100px;
+    grid-template-rows: 200px 100px;
+    margin: 10px;
+}
+
+ /*ACA ESTAN LAS CRATAS*/
+.contenedor{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor figure{
+    position: relative;
+    height: 50%;
+    width: 20%;
+    overflow: hidden;
+    border-radius: 6px ;
+    box-shadow: 0px 15px 25px 
+    rgba(0, 0 , 0, 0.5);
+    cursor: pointer;
+    margin: 1rem;
+
+}
+
+.contenedor figure img{
+    width: auto;
+    height: 100%;
+    transition: all 200ms ease-out;
+}
+
+.contenedor figure .capa{
+position:absolute;
+top: 0rem;
+width: 2rem;
+height: 100%;
+background: #6a6a6a;
+visibility: hidden;
+text-align: center;
+}
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+
+}
+.contenedor figure:hover > img{
+    transform: scale(1.5);
+}
+.contenedor figure:hover > .capa h3{
+    margin-top: 10px;
+    margin-bottom: auto;
+    
+    }
+.contenedor figure .capa h3{
+    color: #383B53;
+    font-weight: auto;
+    margin-bottom: auto;
+    transition: all 200ms ease-out;
+    margin-top: 300px;
+    
+}
+.contenedor figure .capa {
+    color: #383B53;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.contenedor .capa h3{
+    font-weight: 200;
+    margin-bottom: 10rem;
+}
+.contenedor .capa a{
+    text-decoration:none;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: #272635;
+    position:absolute;
+    border-radius: 40px;
+    border: 1px solid #383B53;
+
+    
+}
+
+
+/*Aca esta el segundo subtitulo*/
+.sub1 {
+    color: #383B53;
+    text-align: center;
+    font-size:xx-large;
+
+}
+
+/*aca esta la edicion del fondo de pantalla 1*/
+.fondo1{
+
+    position: relative;
+    display: inline-block;
+    width: auto;
+    color: white;
+}
+    	
+.textoft1{
+    position: absolute;
+    top: 20%;
+    left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color:white;
+    
+}
+
+.textoft2{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: white;
+    
+    
+}
+
+/*iconos*/
+.iconos {
+    margin: 1rem;
+}
