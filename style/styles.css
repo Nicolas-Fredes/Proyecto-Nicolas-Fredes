@@ -297,7 +297,6 @@ footer{
 
 
 
-
 /*diseño pagina redondo*/
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
@@ -319,7 +318,6 @@ footer{
 
 .contenedor-redondo .title{
    font-size: 3.5rem;
-   color:rgb(167, 39, 39);
    margin-bottom: 3rem;
    text-transform: uppercase;
    text-align: center;
@@ -359,10 +357,20 @@ footer{
    font-size: 2rem;
    color:#444;
 }
+.contenedor-redondo .redondos .producto h4{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#444;
+ }
 
 .contenedor-redondo .redondos .producto:hover h3{
    color:#6a6a6a;
 }
+
+.contenedor-redondo .redondos .producto:hover h4{
+    color:#6a6a6a;
+ }
+ 
 
 .contenedor-redondo .redondos .producto .precio{
    font-size: 2rem;
@@ -422,7 +430,7 @@ footer{
 }
 
 .redondo-zoom .zoom .stars i{
-   color:#27ae60;
+   color:#383B53;
 }
 
 .redondo-zoom .zoom .stars span{
@@ -439,7 +447,7 @@ footer{
 .redondo-zoom .zoom .precio{
    padding:1rem 0;
    font-size: 2.5rem;
-   color:#27ae60;
+   color:#272635;
 }
 
 .redondo-zoom .zoom .buttons{
@@ -494,4 +502,20 @@ footer{
       font-size: 50%;
    }
 
+}
+
+/*ANIMACION H1*/
+h1 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
