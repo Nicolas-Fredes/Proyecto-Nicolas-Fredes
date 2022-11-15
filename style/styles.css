@@ -302,23 +302,39 @@ footer{
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 
+*{
+  
+   margin:0; padding:0;
+   box-sizing: border-box;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
 
 .contenedor-redondo{
-   max-width: 1200px;
+   max-width: 1200PX;
    margin:0 auto;
    padding:3rem 2rem;
 }
 
-.contenedor-redondo .redondos {
+.contenedor-redondo .title{
+   font-size: 3.5rem;
+   color:rgb(167, 39, 39);
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.contenedor-redondo .redondos{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
    gap:2rem;
 }
 
-.contenedor-redondo .redondos .producto {
+.contenedor-redondo .redondos .producto{
    text-align: center;
    padding:3rem 2rem;
-   background: #fff;
+   background: #272635;
    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
    outline: .1rem solid #ccc;
    outline-offset: -1.5rem;
@@ -331,7 +347,7 @@ footer{
 }
 
 .contenedor-redondo .redondos .producto img{
-   height: 25rem;
+   height: auto;
 }
 
 .contenedor-redondo .redondos .producto:hover img{
@@ -345,7 +361,7 @@ footer{
 }
 
 .contenedor-redondo .redondos .producto:hover h3{
-   color:#27ae60;
+   color:#6a6a6a;
 }
 
 .contenedor-redondo .redondos .producto .precio{
@@ -364,7 +380,7 @@ footer{
    justify-content: center;
 }
 
-.redonod-zoom .zoom{
+.redondo-zoom .zoom{
    display: none;
    padding:2rem;
    text-align: center;
@@ -374,15 +390,15 @@ footer{
    width: 40rem;
 }
 
-.redonod-zoom .zoom.active{
+.redondo-zoom .zoom.active{
    display: inline-block;
 }
 
-.redonod-zoom .zoom img{
-   height: 30rem;
+.redondo-zoom .zoom img{
+   height: auto;
 }
 
-.redonod-zoom .zoom .fa-times{
+.redondo-zoom .zoom .fa-times{
    position: absolute;
    top:1rem; right:1.5rem;
    cursor: pointer;
@@ -390,51 +406,50 @@ footer{
    font-size: 4rem;
 }
 
-.redonod-zoom .zoom .fa-times:hover{
+.redondo-zoom .zoom .fa-times:hover{
    transform: rotate(90deg);
 }
 
-.redonod-zoom .zoom h3{
+.redondo-zoom .zoom h3{
    color:#444;
    padding:.5rem 0;
    font-size: 2.5rem;
 }
 
-.redonod-zoom .zoom .stars{
+.redondo-zoom .zoom .stars{
    padding:1rem 0;
    font-size: 1.7rem;
 }
 
-.redonod-zoom .zoom .stars i{
-    
+.redondo-zoom .zoom .stars i{
    color:#27ae60;
 }
 
-.redonod-zoom .zoom .stars span{
+.redondo-zoom .zoom .stars span{
    color:#999;
 }
 
-.redonod-zoom .zoom p{
+.redondo-zoom .zoom p{
    line-height: 1.5;
    padding:1rem 0;
    font-size: 1.6rem;
    color:#777;
 }
 
-.redonod-zoom .zoom .price{
+.redondo-zoom .zoom .precio{
    padding:1rem 0;
    font-size: 2.5rem;
    color:#27ae60;
 }
 
-.redonod-zoom .zoom .buttons{
+.redondo-zoom .zoom .buttons{
    display: flex;
    gap:1.5rem;
    flex-wrap: wrap;
    margin-top: 1rem;
 }
 
-.redonod-zoom .zoom .buttons a{
+.redondo-zoom .zoom .buttons a{
    flex:1 1 16rem;
    padding:1rem;
    font-size: 1.8rem;
@@ -442,16 +457,16 @@ footer{
    border:.1rem solid #444;
 }
 
-.redonod-zoom .zoom .buttons a.cart{
+.redondo-zoom .zoom .buttons a.cart{
    background: #444;
    color:#fff;
 }
 
-.redonod-zoom .zoom .buttons a.cart:hover{
+.redondo-zoom .zoom .buttons a.cart:hover{
    background: #111;
 }
 
-.redonod-zoom .zoom .buttons a.buy:hover{
+.redondo-zoom .zoom .buttons a.buy:hover{
    background: #444;
    color:#fff;
 }

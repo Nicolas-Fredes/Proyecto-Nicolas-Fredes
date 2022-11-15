@@ -1,5 +1,5 @@
 let preveiwContainer = document.querySelector('.redondo-zoom');
-let previewBox = preveiwContainer.querySelectorAll('.zoom');
+let previewBox = preveiwContainer.querySelectorAll ('.zoom');
 
 document.querySelectorAll('.redondos .producto').forEach(product =>{
   product.onclick = () =>{
