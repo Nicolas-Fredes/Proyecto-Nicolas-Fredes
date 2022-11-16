@@ -1,15 +1,3 @@
-
-@media screen and (max-width: 320px) {
-    body {
-        background-color:#dcdcdc ;
-    }
-   
-}
-
-img{
-    max-width: 100%;
-
-}
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +5,7 @@ img{
 }
 
 html {
-    font-size: auto;
+    font-size: 62.5%;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif , sans-serif;
 
 }
@@ -32,43 +20,52 @@ hr {
     color: black;
   }
 /*Esto es parte del logo*/
-img {
-    max-width: 100%;
-    max-height: 100%;
-   }
+
 
 .logo {
     height: 200px;
     width: 200px;
     margin: auto;
 }
-/*Menu de navegacion*/
-
-.nave{
-   max-width: 20rem;
-    margin:  auto;
-    background:#6a6a6a ;
-    z-index: 0;
 
 
+/*iconos del final de pag*/
+.logo2 {
+    top: 2rem;
+    display: flex;
+    width: 200px;
+    margin: auto;        
 }
 
-.navegacion ul{
+.apps{
+    
+    margin: 0.5rem;
+}
+
+/*Menu de navegacion*/
+.nave{
+   max-width: auto;
+    margin:  auto;
+    background:#6a6a6a ;
+    font-size: 180%;
+    
+}
+
+.nave ul{
     
     list-style: none;
-    
-
+   
 }
 
 .menu > li{
-    
+    width: 10rem;
     display: inline-block;
 
 }
 
 .menu > li > a{
-    display: grid;
-    padding: 10px 10px;
+    display: flex;
+    padding: 2rem 2rem;
     color:#272635;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     text-decoration: none;
@@ -91,7 +88,7 @@ img {
 }
 
 .submenu li a {
-    display:grid;
+    display:flex;
     padding: 15px;
     color:#272635;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -156,16 +153,21 @@ img .fondo1{
    
      }
 
+.iconos .img{
+        width: 15px;
+     }
+
 
 /*aca estan todo lo que es texto */
 
-
-
-
 .parrafos{
-   
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    overflow: hidden;
+    font-size: 180%;
+
+   
+
 }
 .texto{
     width: 70%;
@@ -187,25 +189,26 @@ img .fondo1{
 
 
 
- /*ACA ESTAN LAS CRATAS*/
+ /*ACA ESTAN LAS CRATAS de HTML*/
 
+ img{
+    max-width: 100%;
 
+}
 
 .contenedor{
-    display: grid;
-    grid-template-columns: 1fr ;
-    margin: 1px;
-    width: auto;
-    align-items: center;
-    height: auto;
+    display: grid;   
+    height: 50%;     
+    grid-template-columns: repeat(auto-fit, minmax(50rem,10fr));
+    gap: 5rem;
 }
 
 .contenedor figure{  
     position: relative;
     height: auto;
-    width: 30rem;
+    width: 50rem;
     overflow: hidden;
-    border-radius: 6px ;
+    border-radius: 30px ;
     box-shadow: 0px 15px 25px 
     rgba(0, 0 , 0, 0.5);
     cursor: pointer;
@@ -214,7 +217,7 @@ img .fondo1{
 }
 
 .contenedor figure img{
-    width: auto;
+    width: 50rem;
     height: auto;
     transition: all 200ms ease-out;
 }
@@ -228,19 +231,22 @@ background: #6a6a6a;
 visibility: hidden;
 text-align: center;
 }
+
 .contenedor figure:hover > .capa{
     opacity: 1;
     visibility: visible;
-
 }
+
 .contenedor figure:hover > img{
     transform: scale(1.5);
 }
+
 .contenedor figure:hover > .capa h3{
     margin-top: 10px;
     margin-bottom: auto;
     
-    }
+}
+
 .contenedor figure .capa h3{
     color: #383B53;
     font-weight: auto;
