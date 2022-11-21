@@ -1,0 +1,184 @@
+
+header{
+    background: $bg-header;
+    height: auto;
+    width: auto;
+    text-align: center;
+    line-height: auto;
+    color: $bg-color-violeta;
+    
+    
+}
+
+/*Primer Subtitulo de las fotos*/
+img .fondo1{
+    max-width: 100%;
+    width: 50rem;
+    
+}
+.sub1 h2{ 
+    display: grid;
+    text-align: center;
+    color: $bg-color-violeta ;
+    font-size:xx-large;
+
+}    
+
+.sub1 img{
+        
+    width: 50rem;
+    height: auto;   
+    display:block;
+    margin:auto;
+
+}   
+
+.article{
+    text-align:left;
+
+}
+
+
+.container{
+    width: 100%;
+    display:flex;
+    max-width: 80rem;
+    text-align: center;
+   
+     }
+
+.iconos .img{
+        width: 15px;
+     }
+
+
+/*aca estan todo lo que es texto */
+
+.parrafos{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 180%;
+
+   
+
+}
+.texto{
+    width: 70%;
+    padding:10px;
+    float: 10px;
+}
+.parrafos p{
+    
+    color: $bg-color-violeta;
+}
+
+.parrafos h2{
+    color: $bg-color-violeta-oscuro;
+}
+.parrafos h3{
+    color: $bg-color-violeta-oscuro;
+}
+
+
+
+
+ /*ACA ESTAN LAS CRATAS de HTML*/
+
+ img{
+    max-width: 100%;
+
+}
+
+.contenedor{
+    display: grid;   
+    height: 50%;     
+    grid-template-columns: repeat(auto-fit, minmax(50rem,10fr));
+    gap: 5rem;
+}
+
+.contenedor figure{  
+    position: relative;
+    height: auto;
+    width: 50rem;
+    overflow: hidden;
+    border-radius: 30px ;
+    box-shadow: 0px 15px 25px 
+    rgba(0, 0 , 0, 0.5);
+    cursor: pointer;
+    margin: 1rem;
+
+}
+
+.contenedor figure img{
+    width: 50rem;
+    height: auto;
+    transition: all 200ms ease-out;
+}
+
+.contenedor figure .capa{
+position:absolute;
+top: 0rem;
+width: 2rem;
+height: 100%;
+background: $bg-gris;
+visibility: hidden;
+text-align: center;
+}
+
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover > img{
+    transform: scale(1.5);
+}
+
+.contenedor figure:hover > .capa h3{
+    margin-top: 10px;
+    margin-bottom: auto;
+    
+}
+
+.contenedor figure .capa h3{
+    color: $bg-color-violeta;
+    font-weight: auto;
+    margin-bottom: auto;
+    transition: all 200ms ease-out;
+    margin-top: 300px;
+    
+}
+.contenedor figure .capa {
+    color: $bg-color-violeta;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.contenedor .capa h3{
+    font-weight: 200;
+    margin-bottom: 10rem;
+}
+.contenedor .capa a{
+    text-decoration:none;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: $bg-color-violeta-oscuro;
+    position:absolute;
+    border-radius: 40px;
+    border: 1px solid $bg-color-violeta;
+
+    
+}
+
+
+/*Aca esta el segundo subtitulo*/
+.sub1 {
+    color: $bg-color-violeta;
+    text-align: center;
+    font-size:xx-large;
+
+}
+

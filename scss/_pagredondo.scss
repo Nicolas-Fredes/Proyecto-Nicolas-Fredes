@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+  
+   margin:0; padding:0;
+   box-sizing: border-box;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+
+.contenedor-redondo{
+   max-width: 1200PX;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+
+.contenedor-redondo .title{
+   font-size: 3.5rem;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.contenedor-redondo .redondos{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+}
+
+.contenedor-redondo .redondos .producto{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #272635;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.contenedor-redondo .redondos .producto:hover{
+   outline: .2rem solid #222;
+   outline-offset: 0;
+}
+
+.contenedor-redondo .redondos .producto img{
+   height: auto;
+}
+
+.contenedor-redondo .redondos .producto:hover img{
+   transform: scale(.9);
+}
+
+.contenedor-redondo .redondos .producto h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:#444;
+}
+.contenedor-redondo .redondos .producto h4{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#444;
+ }
+
+.contenedor-redondo .redondos .producto:hover h3{
+   color:#6a6a6a;
+}
+
+.contenedor-redondo .redondos .producto:hover h4{
+    color:#6a6a6a;
+ }
+ 
+
+.contenedor-redondo .redondos .producto .precio{
+   font-size: 2rem;
+   color:#444;
+}
+
+.redondo-zoom{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.redondo-zoom .zoom{
+   display: none;
+   padding:2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin:2rem;
+   width: 40rem;
+}
+
+.redondo-zoom .zoom.active{
+   display: inline-block;
+}
+
+.redondo-zoom .zoom img{
+   height: auto;
+}
+
+.redondo-zoom .zoom .fa-times{
+   position: absolute;
+   top:1rem; right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 4rem;
+}
+
+.redondo-zoom .zoom .fa-times:hover{
+   transform: rotate(90deg);
+}
+
+.redondo-zoom .zoom h3{
+   color:#444;
+   padding:.5rem 0;
+   font-size: 2.5rem;
+}
+
+.redondo-zoom .zoom .stars{
+   padding:1rem 0;
+   font-size: 1.7rem;
+}
+
+.redondo-zoom .zoom .stars i{
+   color:#383B53;
+}
+
+.redondo-zoom .zoom .stars span{
+   color:#999;
+}
+
+.redondo-zoom .zoom p{
+   line-height: 1.5;
+   padding:1rem 0;
+   font-size: 1.6rem;
+   color:#777;
+}
+
+.redondo-zoom .zoom .precio{
+   padding:1rem 0;
+   font-size: 2.5rem;
+   color:#272635;
+}
+
+.redondo-zoom .zoom .buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+ a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#444;
+   border:.1rem solid #444;
+}
+}
+
+.redondo-zoom .zoom .buttons a.cart{
+   background: #444;
+   color:#fff;
+}
+
+.redondo-zoom .zoom .buttons a.cart:hover{
+   background: #111;
+}
+
+.redondo-zoom .zoom .buttons a.buy:hover{
+   background: #444;
+   color:#fff;
+}
+
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   .products-preview .preview img{
+      height: 25rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+}

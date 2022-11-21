@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
 * {
   margin: 0;
@@ -27,9 +27,10 @@ hr {
   margin: auto;
 }
 
-.apps {
-  margin: 0.5rem;
-} 
+.container {
+  width: auto;
+  margin: auto;
+}
 
 /*Menu de navegacion*/
 .nave {
@@ -38,7 +39,6 @@ hr {
   background: #6a6a6a;
   font-size: 180%;
 }
-
 .nave ul {
   list-style: none;
 }
@@ -47,7 +47,6 @@ hr {
   width: 10rem;
   display: inline-block;
 }
-
 .menu > li > a {
   display: flex;
   padding: 2rem 2rem;
@@ -55,8 +54,7 @@ hr {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: none;
 }
-
-.menu li a:hover {
+.menu > li > a a:hover {
   color: white;
   transition: all 0.3s;
 }
@@ -68,7 +66,6 @@ hr {
   display: none;
   z-index: 1;
 }
-
 .submenu li a {
   display: flex;
   padding: 15px;
@@ -79,11 +76,6 @@ hr {
 
 .menu li:hover .submenu {
   display: block;
-}
-
-.container {
-  width: auto;
-  margin: auto;
 }
 
 header {
@@ -248,16 +240,81 @@ img {
   font-size: xx-large;
 }
 
-/*iconos*/
-.iconos {
-  margin: 1rem;
+/*PIE DE PAGINA*/
+.pie-pagina {
+  width: 100%;
+  background-color: #272635;
+  margin-top: 3rem;
 }
 
-footer {
-  align-content: center;
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
 }
 
-/*diseño pagina redondo*/
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #6a6a6a;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #6a6a6a;
+  margin-right: 10px;
+  background-color: #383B53;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-socia a :hover {
+  color: white;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: #383B53;
+  padding: 15px 10px;
+  text-align: center;
+  color: #6a6a6a;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 53px;
+    padding: 35px 0px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -414,7 +471,6 @@ footer {
   flex-wrap: wrap;
   margin-top: 1rem;
 }
-
 .redondo-zoom .zoom .buttons a {
   flex: 1 1 16rem;
   padding: 1rem;
@@ -450,97 +506,6 @@ footer {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
-  }
-}
-/*ANIMACION H1*/
-h1 {
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite;
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/*PIE DE PAGINA*/
-.pie-pagina {
-  width: 100%;
-  background-color: #272635;
-  margin-top: 3rem;
-}
-
-.pie-pagina .grupo-1 {
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
-}
-
-.pie-pagina .grupo-1 .box figure {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pie-pagina .grupo-1 .box figure img {
-  width: 250px;
-}
-
-.pie-pagina .grupo-1 .box h2 {
-  color: #6a6a6a;
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-
-.pie-pagina .grupo-1 .box p {
-  color: #777;
-  margin-bottom: 10px;
-}
-
-.pie-pagina .grupo-1 .red-social a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #6a6a6a;
-  margin-right: 10px;
-  background-color: #383B53;
-  text-align: center;
-  transition: all 300ms ease;
-}
-
-.pie-pagina .grupo-1 .red-social a:hover {
-  color: #fff;
-}
-
-.pie-pagina .grupo-2 {
-  background-color: #383B53;
-  padding: 15px 10px;
-  text-align: center;
-  color: #6a6a6a;
-}
-
-.pie-pagina .grupo-2 small {
-  font-size: 15px;
-}
-
-@media screen and (max-width: 800px) {
-  .pie-pagina .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 53px;
-    padding: 35px 0px;
   }
 }
 

@@ -1,0 +1,61 @@
+/*Menu de navegacion*/
+.nave{
+    max-width: auto;
+     margin:  auto;
+     background:#6a6a6a ;
+     font-size: 180%;
+     
+     ul{  
+        list-style: none;
+       
+    }
+    
+
+     }
+   
+ .menu > li{
+     width: 10rem;
+     display: inline-block;
+ 
+ > a{
+     display: flex;
+     padding: 2rem 2rem;
+     color:#272635;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+     text-decoration: none;
+ 
+     a:hover {
+        color:white ;
+        transition: all .3s;
+    }
+
+ } 
+  }
+ 
+
+
+ 
+ /*Submenu*/
+ 
+ 
+ .submenu {
+     position: absolute;
+     background:#6a6a6a;
+     display: none;
+     z-index: 1;
+ li a {
+     display:flex;
+     padding: 15px;
+     color:#272635;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     text-decoration: none;
+
+    
+
+    }
+}
+ 
+ .menu li:hover .submenu{
+     display: block;
+ }
+ 
