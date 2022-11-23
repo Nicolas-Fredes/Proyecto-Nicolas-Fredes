@@ -20,17 +20,17 @@ img .fondo1{
     display: grid;
     text-align: center;
     color: $bg-color-violeta ;
-    font-size:x-large;
+    font-size:xxx-large;
 
 }    
 
 .sub1 img{
         
-    width: 50rem;
-    height: auto;   
+    width: 192rem;
+    height: 100%;   
     display:block;
     margin:auto;
-
+  
 }   
 
 .article{
@@ -92,7 +92,7 @@ img .fondo1{
 
 .contenedor{
     display: grid;   
-    height: 50%;     
+    height: auto;     
     grid-template-columns: repeat(auto-fit, minmax(50rem,10fr));
     gap: 5rem;
 }
@@ -178,7 +178,7 @@ text-align: center;
 .sub1 {
     color: $bg-color-violeta;
     text-align: center;
-    font-size:x-large;
+    font-size:xx-large;
 
 }
 
