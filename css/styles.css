@@ -166,6 +166,7 @@ img .fondo1 {
 }
 
 .sub1 h2 {
+  margin-top: 5rem;
   display: grid;
   text-align: center;
   color: #383B53;
@@ -194,6 +195,10 @@ img .fondo1 {
 }
 
 /*aca estan todo lo que es texto */
+.parrafos {
+  margin: 1rem;
+}
+
 .parrafos h2 {
   display: grid;
   color: #383B53;

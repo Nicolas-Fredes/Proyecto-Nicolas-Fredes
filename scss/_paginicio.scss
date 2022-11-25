@@ -17,10 +17,12 @@ img .fondo1{
     
 }
 .sub1 h2{ 
+    margin-top: 5rem;
     display: grid;
     text-align: center;
     color: $bg-color-violeta ;
     font-size:xxx-large;
+
 
 }    
 
@@ -53,7 +55,9 @@ img .fondo1{
 
 
 /*aca estan todo lo que es texto */
-
+.parrafos{
+    margin: 1rem;
+}
 .parrafos h2{
     display: grid;
     color: $bg-color-violeta ;
