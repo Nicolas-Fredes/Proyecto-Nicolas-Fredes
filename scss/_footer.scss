@@ -4,7 +4,7 @@
 .pie-pagina {
     width: 100%;
     background-color: $bg-color-violeta-oscuro;
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
   
   .pie-pagina .grupo-1 {
@@ -71,11 +71,3 @@
     font-size: 15px;
   }
   
-  @media screen and (max-width: 800px) {
-    .pie-pagina .grupo-1 {
-      width: 90%;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 53px;
-      padding: 35px 0px;
-    }
-  }

@@ -12,7 +12,7 @@ header{
 
 /*Primer Subtitulo de las fotos*/
 img .fondo1{
-    max-width: 100%;
+    max-width: AUTO;
     width: 50rem;
     
 }
@@ -43,7 +43,7 @@ img .fondo1{
     width: 100%;
     display:flex;
     max-width: 80rem;
-    text-align: center;
+  
    
      }
 
@@ -54,31 +54,31 @@ img .fondo1{
 
 /*aca estan todo lo que es texto */
 
-.parrafos{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    font-size:large;
-
-   
-
-}
-.texto{
-    width: 70%;
-    padding:10px;
-    float: 10px;
+.parrafos h2{
+    display: grid;
+    color: $bg-color-violeta ;
+    font-size:xxx-large;
 }
 .parrafos p{
-    
-    color: $bg-color-violeta;
+    display: grid;
+    color: $BG-COLOR-P ;
+    font-size: large;
 }
+
 
 .parrafos h2{
     color: $bg-color-violeta-oscuro;
+    margin: 1rem;
 }
 .parrafos h3{
     color: $bg-color-violeta-oscuro;
 }
+
+
+
+
+
+
 
 
 
@@ -92,15 +92,15 @@ img .fondo1{
 
 .contenedor{
     display: grid;   
-    height: auto;     
-    grid-template-columns: repeat(auto-fit, minmax(50rem,10fr));
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(23rem,5fr));
     gap: 5rem;
 }
 
 .contenedor figure{  
     position: relative;
-    height: auto;
-    width: 50rem;
+    height: 30rem;
+    width: 30rem;
     overflow: hidden;
     border-radius: 30px ;
     box-shadow: 0px 15px 25px 
@@ -111,7 +111,7 @@ img .fondo1{
 }
 
 .contenedor figure img{
-    width: 50rem;
+    width: 30rem;
     height: auto;
     transition: all 200ms ease-out;
 }
@@ -120,10 +120,11 @@ img .fondo1{
 position:absolute;
 top: 0rem;
 width: 2rem;
-height: 100%;
+height: auto;
 background: $bg-gris;
 visibility: hidden;
-text-align: center;
+
+
 }
 
 .contenedor figure:hover > .capa{
@@ -154,7 +155,7 @@ text-align: center;
     font-size: 15px;
     line-height: 1.5;
     width: 100%;
-    max-width: 220px;
+    max-width: 25em;
     margin: auto;
 }
 .contenedor .capa h3{
