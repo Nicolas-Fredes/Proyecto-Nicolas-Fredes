@@ -1,111 +1,114 @@
-
-
 //LOGO//
 @media screen and (max-width: 340px) {
-    .LOGO {
-      width: 80%;
-      
-    }
-  }
-  //CARTAS INICIO
-  @media screen and (max-width: 340px) {
-    .contenedor {
-        grid-template-columns: repeat(auto-fit, minmax(30rem,10fr));
+  .LOGO {
+    width: 80%;
 
-    }
   }
+}
+
+//CARTAS INICIO
+@media screen and (max-width: 340px) {
+  .contenedor {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 10fr));
+
+  }
+}
 
 
 //TEXTO//
 
 @media (max-width: 340px) {
-  .parrafos{
+  .parrafos {
     display: flex;
     flex-direction: column;
     margin: 1 auto;
-    font-size: large; 
+    font-size: large;
 
-}
+  }
 
 }
 
 //CARTAS PAG PRINCIPAL
-@media (max-width:340px){
- 
-  .contenedor figure{
-     height: 16rem;
-     width: 16rem;
+@media (max-width:340px) {
+
+  .contenedor figure {
+    height: 16rem;
+    width: 16rem;
   }
 
 }
 
 
-  //CARTAS DE LAS DEMAS PAG//
-  
-@media (max-width:340px){
+//CARTAS DE LAS DEMAS PAG//
 
-    html{
-       font-size: 55%;
-    }
- 
- }
- 
- @media (max-width:340px){
- 
-    .redondo_zoom .zoom img{
-       height: 20rem;
-    }
- 
- }
- 
- @media (max-width:340px){
- 
-    html{
-       font-size: 50%;
-    }
- 
- }
+@media (max-width:340px) {
 
+  html {
+    font-size: 55%;
+  }
 
+}
+
+@media (max-width:340px) {
+
+  .redondo_zoom .zoom img {
+    height: 20rem;
+  }
+
+}
+
+@media (max-width:340px) {
+
+  html {
+    font-size: 50%;
+  }
+
+}
 
 
- //contacto
 
- 
+
+//contacto
+
+
 @media (max-width: 950px) {
-  .container{
+  .container {
     width: auto;
-    padding: 30px 40px 40px 35px ;
+    padding: 30px 40px 40px 35px;
   }
-  .container .content .right-side{
-   width: 75%;
-   margin-left: 55px;
+
+  .container .content .right-side {
+    width: 75%;
+    margin-left: 55px;
+  }
 }
-}
+
 @media (max-width: 700px) {
-  .container{
+  .container {
     margin: 40px 0;
     height: 100%;
   }
 }
 
- @media (max-width: 340px) {
-    .container{
-      margin: 20px 0;
-      height: 100%;
-    }
+@media (max-width: 340px) {
+  .container {
+    margin: 20px 0;
+    height: 100%;
   }
- //FOOTER//
+}
+
+//FOOTER//
 @media screen and (max-width: 340px) {
-    .pie-pagina .grupo-1 {
-      width: 90%;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 20px;
-      padding: 20px 0px;
-    }
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 20px 0px;
   }
-  @media screen and (max-width: 340px) {
-    .parrafos h2 {
-      font-size: larger;
-    }
+}
+
+@media screen and (max-width: 340px) {
+  .parrafos h2 {
+    font-size: larger;
   }
+}

@@ -1,37 +1,38 @@
-
-
-
 * {
-  
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-      }
-  
-  body {
-    min-height: 100vh;
-    width: 100%;
-    font-family: 'Manrope', sans-serif;
-  
-  }
-  
-  /*linea del principio*/
-  hr {
-    color: black;
-    width: auto;
-  }
-  
-  /*Esto es parte del logo*/
-  .logo {
-    height: 200px;
-    width: 200px;
-    margin: auto;
-  }
-  .container{
-    width: auto ;
-    margin: auto ;
-     
+
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Manrope', sans-serif;
+
+}
+
+/*linea del principio*/
+hr {
+  color: black;
+  width: auto;
+}
+
+/*Esto es parte del logo*/
+.logo {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.container {
+  width: auto;
+  margin: auto;
+
 
 }

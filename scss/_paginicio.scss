@@ -1,80 +1,83 @@
-
-header{
+header {
     background: $bg-header;
     height: auto;
     width: auto;
     text-align: center;
     line-height: auto;
     color: $bg-color-violeta;
-    
-    
+
+
 }
 
 /*Primer Subtitulo de las fotos*/
-img .fondo1{
+img .fondo1 {
     max-width: AUTO;
     width: 50rem;
-    
+
 }
-.sub1 h2{ 
+
+.sub1 h2 {
     margin-top: 5rem;
     display: grid;
     text-align: center;
     color: $bg-color-violeta ;
-    font-size:xxx-large;
+    font-size: xxx-large;
 
 
-}    
+}
 
-.sub1 img{
-        
+.sub1 img {
+
     width: 192rem;
-    height: 100%;   
-    display:block;
-    margin:auto;
-  
-}   
+    height: 100%;
+    display: block;
+    margin: auto;
 
-.article{
-    text-align:left;
+}
+
+.article {
+    text-align: left;
 
 }
 
 
-.container{
+.container {
     width: 100%;
-    display:flex;
+    display: flex;
     max-width: 80rem;
-  
-   
-     }
 
-.iconos .img{
-        width: 15px;
-     }
+
+}
+
+.iconos .img {
+    width: 15px;
+}
 
 
 /*aca estan todo lo que es texto */
-.parrafos{
+.parrafos {
     margin: 1rem;
 }
-.parrafos h2{
+
+.parrafos h2 {
     display: grid;
     color: $bg-color-violeta ;
-    font-size:xxx-large;
+    font-size: xxx-large;
 }
-.parrafos p{
+
+.parrafos p {
     display: grid;
     color: $BG-COLOR-P ;
     font-size: large;
 }
 
 
-.parrafos h2{
+.parrafos h2 {
     color: $bg-color-violeta-oscuro;
     margin: 1rem;
 }
-.parrafos h3{
+
+.parrafos h3 {
     color: $bg-color-violeta-oscuro;
 }
 
@@ -87,73 +90,73 @@ img .fondo1{
 
 
 
- /*ACA ESTAN LAS CRATAS de HTM*/
+/*ACA ESTAN LAS CRATAS de HTM*/
 
- img{
+img {
     max-width: 100%;
 
 }
 
-.contenedor{
-    display: grid;   
+.contenedor {
+    display: grid;
     height: auto;
-    grid-template-columns: repeat(auto-fit, minmax(23rem,5fr));
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 5fr));
     gap: 5rem;
 }
 
-.contenedor figure{  
+.contenedor figure {
     position: relative;
     height: 30rem;
     width: 30rem;
     overflow: hidden;
-    border-radius: 30px ;
-    box-shadow: 0px 15px 25px 
-    rgba(0, 0 , 0, 0.5);
+    border-radius: 30px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     margin: 1rem;
 
 }
 
-.contenedor figure img{
+.contenedor figure img {
     width: 30rem;
     height: auto;
     transition: all 200ms ease-out;
 }
 
-.contenedor figure .capa{
-position:absolute;
-top: 0rem;
-width: 2rem;
-height: auto;
-background: $bg-gris;
-visibility: hidden;
+.contenedor figure .capa {
+    position: absolute;
+    top: 0rem;
+    width: 2rem;
+    height: auto;
+    background: $bg-gris;
+    visibility: hidden;
 
 
 }
 
-.contenedor figure:hover > .capa{
+.contenedor figure:hover>.capa {
     opacity: 1;
     visibility: visible;
 }
 
-.contenedor figure:hover > img{
+.contenedor figure:hover>img {
     transform: scale(1.5);
 }
 
-.contenedor figure:hover > .capa h3{
+.contenedor figure:hover>.capa h3 {
     margin-top: 10px;
     margin-bottom: auto;
-    
+
 }
 
-.contenedor figure .capa h3{
+.contenedor figure .capa h3 {
     color: $bg-color-violeta;
     font-weight: auto;
     margin-bottom: auto;
     transition: all 200ms ease-out;
     margin-top: 300px;
-    
+
 }
+
 .contenedor figure .capa {
     color: $bg-color-violeta;
     font-size: 15px;
@@ -162,20 +165,22 @@ visibility: hidden;
     max-width: 25em;
     margin: auto;
 }
-.contenedor .capa h3{
+
+.contenedor .capa h3 {
     font-weight: 200;
     margin-bottom: 10rem;
 }
-.contenedor .capa a{
-    text-decoration:none;
+
+.contenedor .capa a {
+    text-decoration: none;
     padding: 1rem;
     margin-top: 1rem;
     color: $bg-color-violeta-oscuro;
-    position:absolute;
+    position: absolute;
     border-radius: 40px;
     border: 1px solid $bg-color-violeta;
 
-    
+
 }
 
 
@@ -183,7 +188,6 @@ visibility: hidden;
 .sub1 {
     color: $bg-color-violeta;
     text-align: center;
-    font-size:xx-large;
+    font-size: xx-large;
 
 }
-
